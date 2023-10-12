@@ -24,7 +24,7 @@ The model takes in a full image from an MRI scan of the knee and classifies the 
 ![](images/accuracy_per_class_val.png)
 ![](images/confusion_matrix_val.png)
 
-## Test
+### Test
 ![](images/roc_test.png)
 ![](images/confusion_matrix_test.png)
 

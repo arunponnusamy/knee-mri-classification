@@ -1,4 +1,6 @@
 # Knee MRI Classification with CNN, TensorFlow and Python
+![](images/kneeMRI.jpeg)
+
 Classification of Knee MRI images to recognize the Anterior Cruciate Ligament (ACL) condition.
 1. healthy, 
 2. partially injured, or 

@@ -28,6 +28,18 @@ The model takes in a full image from an MRI scan of the knee and classifies the 
 ![](images/roc_test.png)
 ![](images/confusion_matrix_test.png)
 
+```
+                   precision    recall  f1-score   support
+
+          healthy       0.69      0.37      0.49       115
+partially injured       0.28      0.44      0.34        50
+   fully_ruptured       0.24      0.46      0.32        26
+
+         accuracy                           0.40       191
+        macro avg       0.40      0.43      0.38       191
+     weighted avg       0.52      0.40      0.42       191
+```
+
 ## Improvements 
 Below are some of the work to be done to improve the model performance. 
 - Train EfficientNet model with TensorFlow

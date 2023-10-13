@@ -14,7 +14,16 @@ KneeMRI dataset was gathered retrospectively from exam records made on a Siemens
 ## Model
 A MobileNetV2 based image classification model has been trained using [Teachable Machine](https://teachablemachine.withgoogle.com). A subset of the dataset was used to train the model to tackle class imbalance (healthy - 545 images, partially injured - 530 images, completely ruptured - 160 images). 15% of the data are randomly selected for validation. A small separated test set was used for testing (healthy - 115 images, partially injured - 50 images, completely ruptured - 26 images).
 
-The model takes in a full image from an MRI scan of the knee and classifies the ligament condition into one of the following three classes (1) healthy, (2) partially injured, or (3) completely ruptured. Currently the model achieves 70% accuracy on the validation data leaving ample room for improvement.
+The model takes in a full image from an MRI scan of the knee and classifies the ligament condition into one of the following three classes (1) healthy, (2) partially injured, or (3) completely ruptured. Currently the model achieves 70% accuracy on the validation data leaving ample room for improvement. Dataset and the trained model file can be found [here](https://drive.google.com/drive/folders/1uVXeZAMWanCa9-PcKGLPw6ujbsBsJifv?usp=sharing).
+
+To run inference on the test set, use the command below
+```
+python test.py /path/to/model/file /path/to/test/dir
+```
+For example
+```
+python test.py model/converted_keras_full_image_545/keras_model.h5 dataset/test/
+```
 
 ### Training and Validation 
 ![](images/train_val_aacuracy.png)
